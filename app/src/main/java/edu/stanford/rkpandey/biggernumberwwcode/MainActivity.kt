@@ -2,6 +2,8 @@ package edu.stanford.rkpandey.biggernumberwwcode
 
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -9,7 +11,14 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var btnLeft:Button
+    private lateinit var btnRight:Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        btnLeft=findViewById(R.id.btnLeft)
+        btnRight=findViewById(R.id.btnLeft)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
